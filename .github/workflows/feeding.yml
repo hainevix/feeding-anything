@@ -16,10 +16,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           #pip install -r requirements.txt # install required packages stored in requirements.txt
-      - name: download feeding.db
-        uses: actions/download-artifact@v2
-        with:
-          name: feeding.db
       - name: execute py script # run feeding.py
         run: python feeding.py
       - name: upload feeding.db
