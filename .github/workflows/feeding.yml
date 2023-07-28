@@ -1,7 +1,7 @@
 name: feeding
 on:
   schedule:
-    - cron: '0 * * * *' # This runs at every hour
+    - cron: '* * * 1 *' 
 jobs:
   build:
     runs-on: ubuntu-latest
